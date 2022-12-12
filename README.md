@@ -210,3 +210,46 @@ http://127.0.0.1:61249
 ```
 This should give an output like `http://127.0.0.1:61249` (the port will most likely differ). you should see "Hello World!". You just accessed your application from outside of your local Kubernetes cluster!
 ![hello-world.png](images%2Fhello-world.png)
+
+# Kubernetes GUI
+```text
+🔌  Enabling dashboard ...
+    ▪ Using image docker.io/kubernetesui/dashboard:v2.7.0
+    ▪ Using image docker.io/kubernetesui/metrics-scraper:v1.0.8
+🤔  Verifying dashboard health ...
+🚀  Launching proxy ...
+🤔  Verifying proxy health ...
+🎉  Opening http://127.0.0.1:61358/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/ in your default browser...
+```
+![kubernetes-dashboard.png](images%2Fkubernetes-dashboard.png)
+![kubernetes-deployments.png](images%2Fkubernetes-deployments.png)
+![kubernetes-replicasets.png](images%2Fkubernetes-replicasets.png)
+![kubernetes-services.png](images%2Fkubernetes-services.png)
+
+# Delete deployment of my-app
+```text
+bash-5.2$ kubectl delete deploy my-app
+deployment.apps "my-app" deleted
+```
+```text
+bash-5.2$ kubectl delete service my-app
+service "my-app" deleted
+```
+You're now good to go and deploy other images!
+
+# Reset
+```text
+bash-5.2$ minikube stop;
+✋  Stopping node "minikube"  ...
+🛑  Powering off "minikube" via SSH ...
+🛑  1 node stopped.
+bash-5.2$ minikube delete;
+🔥  Deleting "minikube" in docker ...
+🔥  Deleting container "minikube" ...
+🔥  Removing /Users/ajay/.minikube/machines/minikube ...
+💀  Removed all traces of the "minikube" cluster.
+bash-5.2$ rm -rf ~/.minikube ~/.kube;
+```
+
+# Version
+Last tested on 2022 December 12th macOS High Sierra 10.13.6
