@@ -208,5 +208,5 @@ bash-5.2$ minikube service my-app --url
 http://127.0.0.1:61249
 ❗  Because you are using a Docker driver on darwin, the terminal needs to be open to run it.
 ```
-This should give an output like `http://127.0.0.1:61249` (the port will most likely differ). Go there with your favorite browser, you should see "Hello World!". You just accessed your application from outside of your local Kubernetes cluster!
+This should give an output like `http://127.0.0.1:61249` (the port will most likely differ). you should see "Hello World!". You just accessed your application from outside of your local Kubernetes cluster!
 ![hello-world.png](images%2Fhello-world.png)
