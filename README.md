@@ -1,3 +1,15 @@
+# About My Mac
+```text
+Model Name           :	MacBook Pro
+Model Identifier     :	MacBookPro14,2
+Processor Name       :	Intel Core i5
+Processor Speed      :	3.1 GHz
+Number of Processors :	1
+Total Number of Cores:	2
+L2 Cache (per Core)  :	256 KB
+L3 Cache             :	4 MB
+Memory               :	8 GB
+```
 # Requirements
 Minikube requires that VT-x/AMD-v virtualization is enabled in BIOS. To check that this is enabled on OSX / macOS run:
 ```text
