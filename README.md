@@ -1,4 +1,4 @@
-# About My Mac
+# About My Mac (macOS High Sierra 10.13.6)
 ```text
 Model Name           :	MacBook Pro
 Model Identifier     :	MacBookPro14,2
