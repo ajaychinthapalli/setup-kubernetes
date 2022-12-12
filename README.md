@@ -213,6 +213,7 @@ This should give an output like `http://127.0.0.1:61249` (the port will most lik
 
 # Kubernetes GUI
 ```text
+bash-5.2$ minikube dashboard
 🔌  Enabling dashboard ...
     ▪ Using image docker.io/kubernetesui/dashboard:v2.7.0
     ▪ Using image docker.io/kubernetesui/metrics-scraper:v1.0.8
