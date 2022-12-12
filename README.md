@@ -252,4 +252,4 @@ bash-5.2$ rm -rf ~/.minikube ~/.kube;
 ```
 
 # Version
-Last tested on 2022 December 12th macOS High Sierra 10.13.6
+Last tested on 2022 December 12th (**macOS High Sierra 10.13.6**)
