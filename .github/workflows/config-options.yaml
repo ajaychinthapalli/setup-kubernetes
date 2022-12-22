@@ -1,0 +1,19 @@
+name: Kubernetes Configuration Options
+on: workflow_dispatch
+jobs:
+  kubernetes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3ba5ee6fac7e0e30e2ea884e236f282d3a775891
+      - uses: medyagh/setup-minikube@35b85ace4fb99111653ecd9f09741138897741e7
+        with:
+          minikube-version: 1.24.0
+          driver: docker
+          container-runtime: containerd
+          kubernetes-version: v1.22.3
+          cpus: 4
+          memory: 4000m
+          cni: bridge
+          addons: registry,ingress
+          extra-config: 'kubelet.max-pods=10'
+      - run: kubectl get pods -A # run kubectl to see the pods in the cluster
