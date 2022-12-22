@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@3ba5ee6fac7e0e30e2ea884e236f282d3a775891
       - uses: medyagh/setup-minikube@35b85ace4fb99111653ecd9f09741138897741e7
         with:
-          minikube-version: 1.24.0
+          minikube-version: 1.28.0
           driver: docker
           container-runtime: containerd
           kubernetes-version: v1.22.3
