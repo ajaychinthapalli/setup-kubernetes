@@ -1,0 +1,8 @@
+name: Setup Kubernetes
+on: workflow_dispatch
+jobs:
+  kubernetes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3ba5ee6fac7e0e30e2ea884e236f282d3a775891
+      - uses: medyagh/setup-minikube@35b85ace4fb99111653ecd9f09741138897741e7
