@@ -11,6 +11,7 @@ jobs:
         run: |
           export SHELL=/bin/bash
           eval $(minikube -p minikube docker-env)
+          docker build . --tag my-app
           echo -n "verifying images:"
           docker images
       - name: Deploy to minikube
@@ -19,6 +20,4 @@ jobs:
       - name: Test Service URI's
         run: |
           minikube service list
-          minikube service discover --url
-          echo -n "------------------opening the service------------------"
-          curl $(minikube service discover --url)/version
+          minikube service my-app --url
