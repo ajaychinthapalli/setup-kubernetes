@@ -1,3 +1,5 @@
+[![Setup Kubernetes](https://github.com/ajaychinthapalli/setup-kubernetes/actions/workflows/start-kubernetes.yaml/badge.svg?branch=main)](https://github.com/ajaychinthapalli/setup-kubernetes/actions/workflows/start-kubernetes.yaml)[![Kubernetes Configuration Options](https://github.com/ajaychinthapalli/setup-kubernetes/actions/workflows/config-options.yaml/badge.svg)](https://github.com/ajaychinthapalli/setup-kubernetes/actions/workflows/config-options.yaml)
+[![Kubernetes Build & Deploy](https://github.com/ajaychinthapalli/setup-kubernetes/actions/workflows/build-deploy.yaml/badge.svg)](https://github.com/ajaychinthapalli/setup-kubernetes/actions/workflows/build-deploy.yaml)
 # About My Mac (macOS High Sierra 10.13.6)
 ```text
 Model Name           :	MacBook Pro
